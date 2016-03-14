@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+.system-log
+{
+	padding-left: 30px;
+	padding-top: 20px;
+}
+.system-table
+{
+	border-left: 1px solid #c9c9c9;
+	border-collapse: collapse;
+}
+.system-table caption
+{
+	width:989px;
+	height: 36px;
+	line-height:36px;
+	border: 1px solid #c9c9c9;
+	color: #0066cc;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.system-table th,.system-table td {
+	width: 197px;
+	height: 36px;
+	border-bottom:1px solid #c9c9c9;
+	border-right:1px solid #c9c9c9;
+	text-align: center;
+}
+.system-table th
+{
+	height: 50px;
+	background-color: #f2f2f2;
+}

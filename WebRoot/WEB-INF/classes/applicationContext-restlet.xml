@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+        http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.0.xsd">
+
+
+	<bean id="root" class="org.restlet.ext.spring.SpringComponent">
+		<property name="defaultTarget" ref="restServer" />
+	</bean>
+
+	<!-- <bean id="restServer" class="org.restlet.ext.jaxrs.JaxRsApplication">
+		<property name="objectFactory" ref="springJaxObjectFactory" />
+		<property name="applications" ref="springJaxConfig" />
+	</bean> -->
+	
+	<bean id="restServer" class="com.asiainfo.bss.monitor.app.ExtendJaxRsApplication">
+		<property name="objectFactory" ref="springJaxObjectFactory" />
+		<property name="applications" ref="springJaxConfig" />
+	</bean>
+
+	<bean id="root.context"
+		class="org.springframework.beans.factory.config.PropertyPathFactoryBean" />
+
+	<bean id="springJaxObjectFactory" class="com.asiainfo.bss.monitor.spring.SpringJaxObjectFactory">
+		<constructor-arg ref="jaxBeanCollection" />
+	</bean>
+	<bean id="springJaxConfig" class="com.asiainfo.bss.monitor.spring.SpringJaxConfig">
+		<constructor-arg ref="jaxBeanCollection" />
+	</bean>
+
+	<bean id="jaxBeanCollection" class="com.asiainfo.bss.monitor.bean.JaxBeanCollection">
+		<property name="beanNames">
+			<list>
+				<value>helloWorldResource</value>
+				<value>studentResource</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="helloWorldResource" class="com.asiainfo.bss.monitor.resource.HelloWorldresource"
+		scope="prototype" />
+	<bean id="studentResource" class="com.asiainfo.bss.monitor.resource.StudentResource"
+		scope="prototype" />
+
+</beans>

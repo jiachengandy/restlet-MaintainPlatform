@@ -1,0 +1,31 @@
+<div class="header" ng-init="initUrls();getLocalTime();">
+	<div class="nav-logo">
+		<div class="logo-img"></div>
+		<div class="bss-tip">BSS缁存姢绠＄悊骞冲彴</div>
+	</div>
+	<div class="nav-header">
+		<div  class="nav-user">
+			<ul>
+				<li class="user-info"><div class="user-img img">
+						<span></span>
+					</div>
+					<div class="user-name">{{name_zh}}</div></li>
+				<li class="line-vertical"></li>
+				<li><div class="user-customer img">
+						<span></span>
+					</div></li>
+				<li><div class="user-logout img" ng-click="logout()" title="閫�鍑�">
+						<span></span>
+					</div></li>
+			</ul>
+			<div class="time">{{time}}</div>
+		</div>
+		<div class="nav-menu">
+			<ul>
+				<li id="{{url.name}}" class="{{url.name}} url-item"
+					ng-class="{current:currentMenu==url.name}" ng-repeat="url in urls"
+					ng-click="changeLocation(url.name)">{{url.desc}}</li>
+			</ul>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,116 @@
+@CHARSET "UTF-8";
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.page-login
+{
+	position:absolute;
+	height: 100%;
+	width: 100%;
+/* 	background: -ms-linear-gradient(top, #f0f0f0, #62a9e3);
+	background: -moz-linear-gradient(top, #f0f0f0, #62a9e3);
+	background: -webkit-linear-gradient(top,#f0f0f0, #62a9e3); */
+ 	background: -webkit-radial-gradient(#62a9e3, #005870, #005870);
+    background: -o-radial-gradient(#62a9e3, #005870, #005870);
+    background: -moz-radial-gradient(#62a9e3, #005870, #005870);
+    background: radial-gradient(#62a9e3, #005870, #005870);
+
+/*     background: url("../img/background.png");
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size:100% 100%; */
+}
+.page-login .user-login
+{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-300px;
+	margin-top:-100px;
+	width: 600px;
+	height: 200px;
+    font-style: italic;
+}
+
+@keyframes mybss
+{
+	0%   { width:100px;}
+    100% { width:400px;}
+}
+
+@-webkit-keyframes mybss /* Safari and Chrome */
+{
+    0%   { width:100px;}
+    100% { width:400px;}
+}
+.user-login .login-logo
+{
+	margin-left:100px;
+	/* width:400px; */
+	height: 88px;
+	line-height: 88px;
+	overflow: hidden;
+	animation:mybss 3s infinite;
+    -moz-animation:mybss 3s infinite; /* Firefox */
+    -webkit-animation:mybss 3s infinite; /* Safari and Chrome */
+    -o-animation:mybss 3s infinite; /* Opera */
+}
+.user-login >span
+{
+	margin-top: 30px;
+	display: block;
+}
+.login-logo >span
+{
+	margin-left: 20px;
+	font-size: 28px;
+	color: #3a6298;
+}
+.login-logo .bsslogo
+{
+	width:85px;
+	height: 88px;
+	background-image: url("../img/login.png");
+	float: left;
+}
+.div-login{
+	margin-top: 20px;
+}
+.span-username,.span-password{
+	display: inline-block;
+	border: 1px solid #dddddd;
+	border-radius:3px; 
+}
+.login-username,.login-password
+{
+	height: 34px;
+	width: 210px;
+	font-size: 20px;
+	border: none;
+	outline: none;
+}
+.span-password
+{
+	margin-left: 30px;
+}
+.login-submit
+{
+	margin-left: 30px;
+	height: 36px;
+	width: 100px;
+	font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+    border-radius:3px; 
+    border: none;
+}
+.login-submit:HOVER
+{
+	cursor: pointer;
+}
+.user-login >span.login-tip
+{
+	margin-top: 10px;
+	color: #f00;
+}

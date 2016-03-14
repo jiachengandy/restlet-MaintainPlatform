@@ -1,0 +1,83 @@
+@CHARSET "UTF-8";
+.page-warning-check{
+	margin:0 auto;
+	width: 98%;
+}
+.page-warning-check h4{
+	text-align: center;
+}
+.warning-check ,.warning-checkApp{
+	margin-top: 20px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+.warning-checkApp{
+	margin-bottom: 20px;
+}
+.warning-check-operation,.warning-checkApp-operation{
+	padding:2px;
+	overflow: hidden;
+}
+.warning-filter,.checkApp-filter{
+	margin-left:5px;
+	height: 28px;
+	border: solid 1px #aaa;
+	border-radius:3px;
+}
+.warning-check-operation .btn,.warning-checkApp-operation .btn{
+	padding: 3px 12px;
+	float: right;
+}
+.table-check-slider{
+	position:relative;
+	max-height: 280px;
+	overflow: hidden;
+}
+.warning-check td {
+	max-width: 450px;
+}
+.table-checkApp-slider{
+	position:relative;
+	height: 280px;
+	overflow: hidden;
+}
+.page-warning-check .btn{
+	padding: 3px 12px;
+}
+.table-check-slider tr.current{
+	background-color: #8582ff !important;
+	color: #fff;
+}
+/**设置隐藏的按钮*/
+.warningcheck-modify ,.checkApp-modify{
+	display: none;
+}
+.checkApp-grp-slider{
+	position:relative;
+	max-height: 400px;
+	width:100%;
+	overflow-y: hidden;
+}
+.table-outer .tr-outer>th{
+	width: 17%;
+}
+.table-innner td{
+	padding-left: 0px !important;
+	border: none !important;
+}
+.table-innner .tr-inner>td{
+	width: 20%;
+}
+td.td-group-first{
+	vertical-align: middle !important;
+}
+#checkApp-grp .modal-header{
+	border-bottom: none;
+}
+
+.padding-clear{
+	padding-left: 0px;
+}
+.checkApp-th-last{
+	width: 90px;
+}

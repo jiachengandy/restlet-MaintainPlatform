@@ -1,0 +1,330 @@
+@CHARSET "UTF-8";
+
+.maintain-plan {
+	padding-left: 20px;
+	float: left;
+	overflow: hidden;
+}
+
+.plan-item {
+	margin-top: 20px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #717171;
+	overflow: hidden;
+}
+
+.plan-item>div {
+	height: 142px;
+	float: left;
+}
+
+.plan-publisher {
+	width: 80px;
+}
+
+.publisher-img {
+	text-align: center;
+}
+
+.publisher-name {
+	position: relative;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.plan-introduction {
+	padding-left: 20px;
+	width: 904px;
+	border: 1px solid #717171;
+}
+
+.plan-title {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	overflow: hidden;
+}
+
+.plan-title>span {
+	float: left;
+}
+
+.plan-star {
+	position: relative;
+	margin-left: 10px;
+	width: 16px;
+	height: 16px;
+	display: block;
+	background-image: url("../img/u56.png");
+}
+
+.plan-star:FIRST-CHILD {
+	margin-left: 20px;
+}
+
+.plan-date {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #717171;
+}
+
+.plan-content {
+	padding-top: 10px;
+	height: 75px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+/*值班记录样式*/
+.duty-query{
+	overflow: hidden;
+}
+.duty-date-input
+{
+	float: left;
+}
+.duty-list{
+	min-height: 400px;
+}
+.duty-record {
+	padding-top: 20px;
+}
+.duty-record-list{
+	padding-left:30px;
+}
+.duty-record-add .form-group
+{
+	width: 80%;
+}
+
+.duty-query .query-input {
+	width: 200px;
+	height: 32px;
+	font-size: 18px;
+}
+/* 
+.duty-table {
+	margin-top: 10px;
+	border-left: 1px solid #c9c9c9;
+}
+ */
+.duty-table caption {
+	border: 1px solid #c9c9c9;
+	color: #0066cc;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.duty-table th,.duty-table td {
+	border-bottom: 1px solid #c9c9c9;
+	border-right: 1px solid #c9c9c9;
+	text-align: center;
+}
+
+.duty-table th {
+	background-color: #f2f2f2;
+}
+
+.duty-record .duty-btn-add {
+/* 	width: 100px;
+	height: 34px;
+	line-height: 34px; */
+	float: right;
+	text-align: center;
+	/* background-color: #dddddd;
+	box-shadow: 2px 2px 0 #aaaaaa; */
+}
+
+.duty-record .duty-btn-add:hover {
+	cursor: pointer;
+}
+/*设置input样式*/
+.input-style {
+	padding: 5px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	overflow: hidden;
+}
+
+.input-style input {
+	width: 90%;
+	height: 30px;
+	font-size: 14px;
+}
+
+.input-style .btn-submit,.input-style .btn-reset {
+	width: 45px;
+	height: 30px;
+	line-height: 32px;
+	float: left;
+	text-align: center;
+	font-size: 14px;
+	background-color: #dddddd;
+	box-shadow: 2px 2px 0 #aaaaaa;
+}
+
+.input-style .btn-reset {
+	margin-left: 20px;
+}
+
+.btn-submit:HOVER,.btn-reset:HOVER {
+	cursor: pointer;
+}
+
+/*维护记录*/
+.maintain-record {
+	width: 100%;
+	height: 600px;
+}
+
+.event-option {
+	margin: 10px;
+	overflow: hidden;
+}
+
+.event-option>div {
+	float: left;
+	width: 240px;
+}
+
+div.event-add {
+	margin-right: 40px;
+	width: auto;
+	float: right;
+	width: auto;
+}
+
+.event-list {
+	overflow: hidden;
+}
+
+.event-item-list {
+	position: relative;
+	margin:0 auto;
+	width: 981px;
+	border-top: 1px solid #c9c9c9;
+	border-left: 1px solid #c9c9c9;
+	overflow: hidden;
+	border-top: 1px solid #c9c9c9;
+}
+
+.event-item-list li {
+	width: 140px;
+	height: 100px;
+	border-right: 1px solid #c9c9c9;
+	border-bottom: 1px solid #c9c9c9;
+	float: left;
+}
+
+.event-item-list li.exist:hover {
+	cursor: pointer;
+}
+
+.event-item-list .date-number {
+	margin-left: 5px;
+	color: #1c92c8;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.form-event-add {
+	padding-top: 20px;
+}
+
+.maintain-form .form-group {
+	width: 80%;
+}
+
+.maintain-form>span {
+	margin-top: 15px;
+	margin-left: 15px; float : left;
+	clear: both;
+	float: left;
+}
+/*设置弹出层*/
+.maintain-mask {
+	position: fixed;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.5;
+	filter: alpha(opacity = 50);
+	top: 0px;
+	z-index: 200;
+}
+
+.maintain-popwin {
+	position: fixed;
+	padding: 10px;
+	width: 800px;
+	height: 550px;
+	left: 50%;
+	top: 50%;
+	margin-left: -400px;
+	margin-top: -275px;
+	background-color: #fff;
+	z-index: 2001;
+	overflow: auto;
+}
+.maintain-popwin.min{
+	height: 400px;
+	margin-top: -200px;
+}
+.win-close {
+	height: 20px;
+	width: 20px;
+	border-radius: 10px;
+	line-height: 20px;
+	text-align: center;
+	float: right;
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.win-close:HOVER {
+	cursor: pointer;
+	background-color: #3880ff;
+	color: #fff;
+}
+
+.event-day-content {
+	padding-top: 1px;
+	padding-left: 2px;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.event-day-more
+{
+	text-align: center;
+	font-weight: bold;
+	background-color: #76c8f8;
+}
+.event-day-more:HOVER{
+	cursor: pointer;
+}
+.table-record caption,.table-record th , .table-record td{
+	text-align: center;
+}
+.table-record .event-day-operation {
+	width: 150px;
+}
+.record-view .table-inner td{
+	min-width:180px;
+	word-break:break-all;
+}
+
+.table-record td a {
+	margin-left: 5px;
+}
+
+.event-del,.event-modify {
+	margin-left: 10px;
+}
+
+.event-view:hover,.event-del:hover,.event-modify:hover {
+	cursor: pointer;
+}

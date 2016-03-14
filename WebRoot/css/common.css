@@ -1,0 +1,429 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	/* font-family: 'Arial Normal', 'Arial'; */
+	font-family: "Microsoft YaHei" ! important; 
+	/* font-family: "Consolas" ! important;  */
+	font-size: 13px;
+	color: #333333;
+}
+
+table {
+	border-collapse: collapse;
+}
+ul{
+	margin-bottom: 0px;
+}
+.ul-item{
+  background-color: #FFF3FD;
+  color: #555;
+}
+.item-child > div {
+  padding-left: 20px;
+  height: 30px;
+  line-height: 30px;
+}
+.ul-item .option-item.current>div {
+  background-color: #FFF3FD;
+  color: #ff6600;
+}
+.item-child > div:hover {
+  cursor: pointer;
+}
+li {
+	list-style: none;
+}
+
+.my-background{
+	background: -ms-linear-gradient(top, #f0f0f0, #62a9e3);
+	background: -moz-linear-gradient(top, #f0f0f0, #62a9e3);
+	background: -webkit-linear-gradient(top,#f0f0f0, #62a9e3);
+}
+.page-out {
+	position: relative;
+	margin: 0 auto;
+	width: 1300px;
+	/* background-color: #FFF3FD; */
+}
+.page-content{
+	margin-top:5px;
+	overflow: hidden;
+}
+.page-aside {
+	position: relative;
+	width: 248px;
+	height: 657px;
+	float: left;
+	border-right: 1px solid #5594c7;
+	/* background-color: #f6f6f6; */
+	background-color:#005870;
+	/* color: #264268; */
+	color:#fff;
+    /* overflow-y: auto;
+	overflow-x: hidden; */
+	overflow: hidden;
+}
+
+.page-aside>div {
+	width: 248px;
+	float: left;
+}
+
+.option-list {
+	position:relative;
+	clear: both;
+	background-color: #005870;
+	overflow: hidden;
+}
+
+.option-list>li {
+	/* padding-top: 4px;
+	padding-bottom: 4px; */
+	width: 248px;
+	font-size: 14px;
+	list-style: none;
+	text-align:center;
+	/* border-bottom: 1px solid #bbbbbb; */
+	overflow: auto;
+}
+
+.option-list>li.urgent {
+	color: #ff0000;
+}
+
+.option-list>li.important {
+	color: #ff6600;
+}
+
+.option-list>li>div {
+	margin:0 auto;
+	width:246px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-bottom: 1px solid #196377;
+}
+
+.option-list>li>div:HOVER {
+	cursor: pointer;
+}
+/* .option-item.current
+{
+	background-color: #69c1f1;
+	background-color: #26445d;
+} */
+ .option-item.current>div {
+	background-color: #26445d;
+}
+
+.page-info {
+	position: relative;
+	width: 248px;
+	height: 46px;
+	float: left;
+	line-height: 47px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	/* background-color: #5b9fd6; */
+	background-color: #005870;
+	border-bottom: 1px solid #5b9fd6;
+    box-shadow: 0 1px 0 #196377;
+}
+
+.page-section {
+	height: 657px;
+	width: 1050px;
+	float: left;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+/*设置内容样式*/
+.current-location {
+	width: 1052px;
+	height: 35px;
+	line-height: 35px;
+	color: #ccc;
+    background-color: #005870;
+	font-size: 14px;
+}
+
+.current-location>div {
+	float: left;
+}
+
+.location-img {
+	position: relative;
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 16px;
+	height: 16px;
+	background-image: url("../img/location.png");
+}
+
+.location-desc {
+	margin-left: 5px;
+}
+
+.page-footer {
+	height: 30px;
+	background-color: #c9d9e9;
+	clear: both;
+}
+/*分页条*/
+.pagination {
+	margin-top: 20px;
+	overflow: hidden;
+	clear: both;
+	display: block;
+}
+
+.ul-pagination {
+	position: relative;
+	margin: 0 auto;
+	left: 50%;
+	float: left;
+	font-size: 14px;
+	clear: both;
+}
+
+.ul-pagination>li {
+	position: relative;
+	margin-left: 5px;
+	left: -50%;
+	float: left;
+	list-style: none;
+}
+
+.ul-pagination>li.pagination-total {
+	width: auto;
+}
+
+.ul-pagination>li:hover {
+	cursor: pointer;
+}
+
+.pagination-total {
+	width: 56px;
+	height: 25px;
+	line-height: 25px;
+}
+
+.pagination-start,.pagination-last,.pagination-next,.pagination-end {
+	width: 56px;
+	height: 25px;
+	line-height: 25px;
+	border-radius: 12px;
+	border: 1px solid #717171;
+	text-align: center;
+}
+
+.pagination-item {
+	width: 34px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+}
+
+.pagination-item.current {
+	border-radius: 12px;
+	border: 1px solid #717171;
+}
+
+/*设置弹出层样式*/
+.masklayer {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: #000;
+	opacity: 0.5;
+	filter: alpha(opacity = 50);
+	top: 0px;
+	z-index: 200;
+}
+
+#popupwin {
+	position: fixed;
+	left: 50%;
+	top: 45%;
+	z-index: 201;
+}
+
+.win-close {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	float: right;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 16px;
+	color:#aaa;
+	display: inline-block;
+}
+/*设置bootstrap弹出框的样式*/
+.modal-content form {
+	margin-top: 12px;
+}
+.modal-header .close{
+	margin-top: -10px;
+}
+/*制作loading效果*/
+div.coverLayer {
+	background: #000;
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	display: none;
+	width: 100%;
+	filter: alpha(opacity = 50);
+	opacity: 0.5;
+}
+
+div.coverLoading {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	width: 200px;
+	height: 200px;
+	display: none;
+	margin-left: -100px;
+	margin-top: -100px;
+	z-index: 10000;
+}
+
+.spinner {
+	margin: 100px auto;
+	width: 80px;
+	height: 80px;
+	position: relative;
+}
+
+.container1>div,.container2>div,.container3>div {
+	width: 25px;
+	height: 25px;
+	background-color: #69c1f1;
+	border-radius: 100%;
+	position: absolute;
+	-webkit-animation: bouncedelay 1.2s infinite ease-in-out;
+	animation: bouncedelay 1.2s infinite ease-in-out;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.spinner .spinner-container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.container2 {
+	-webkit-transform: rotateZ(45deg);
+	transform: rotateZ(45deg);
+}
+
+.container3 {
+	-webkit-transform: rotateZ(90deg);
+	transform: rotateZ(90deg);
+}
+
+.circle1 {
+	top: 0;
+	left: 0;
+}
+
+.circle2 {
+	top: 0;
+	right: 0;
+}
+
+.circle3 {
+	right: 0;
+	bottom: 0;
+}
+
+.circle4 {
+	left: 0;
+	bottom: 0;
+}
+
+.container2 .circle1 {
+	-webkit-animation-delay: -1.1s;
+	animation-delay: -1.1s;
+}
+
+.container3 .circle1 {
+	-webkit-animation-delay: -1.0s;
+	animation-delay: -1.0s;
+}
+
+.container1 .circle2 {
+	-webkit-animation-delay: -0.9s;
+	animation-delay: -0.9s;
+}
+
+.container2 .circle2 {
+	-webkit-animation-delay: -0.8s;
+	animation-delay: -0.8s;
+}
+
+.container3 .circle2 {
+	-webkit-animation-delay: -0.7s;
+	animation-delay: -0.7s;
+}
+
+.container1 .circle3 {
+	-webkit-animation-delay: -0.6s;
+	animation-delay: -0.6s;
+}
+
+.container2 .circle3 {
+	-webkit-animation-delay: -0.5s;
+	animation-delay: -0.5s;
+}
+
+.container3 .circle3 {
+	-webkit-animation-delay: -0.4s;
+	animation-delay: -0.4s;
+}
+
+.container1 .circle4 {
+	-webkit-animation-delay: -0.3s;
+	animation-delay: -0.3s;
+}
+
+.container2 .circle4 {
+	-webkit-animation-delay: -0.2s;
+	animation-delay: -0.2s;
+}
+
+.container3 .circle4 {
+	-webkit-animation-delay: -0.1s;
+	animation-delay: -0.1s;
+}
+
+@-webkit-keyframes bouncedelay { 0%, 80%, 100% {
+	-webkit-transform: scale(0.0)
+}
+40%
+{
+-webkit-transform:scale(1.0)
+}
+}
+@keyframes bouncedelay { 0%, 80%, 100% {
+	transform: scale(0.0);
+	-webkit-transform: scale(0.0);
+}
+40%
+{
+transform:scale(1.0);
+-webkit-transform:scale(1.0);
+}
+}
